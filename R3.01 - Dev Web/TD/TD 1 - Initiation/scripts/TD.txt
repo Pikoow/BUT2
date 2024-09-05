@@ -1,0 +1,21 @@
+Exercice 1 :
+
+Question 1 :
+a)
+    - shebang (#!)
+    - donner un chemin vers l'interpréteur
+    - #!/usr/bin/php
+b)
+    - Le droit de l'executer
+    - chmod u+x TD1.php
+
+Question 2 : 
+- Fait
+
+Exercice 2 :
+
+Important :
+- php -S localhost:8888
+- http://localhost:8888/exo2_q1.php
+
+Question 1 :
