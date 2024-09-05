@@ -31,12 +31,38 @@
 
 ## 4) Décrivez les US listées (besoin, acteur et valeur métier)
 
-    En tant que professionel
+    a) En tant que professionel
 
-    Je veux créer une offre
+       Je veux créer une offre
 
-    dans le but de d'attirer des clients pour augmenter mon chiffre d'affaire
+       dans le but de d'attirer des clients pour augmenter mon chiffre d'affaire
 
-    En tant que membre
+    b) En tant que membre
 
-    Je veux consulter
+       Je veux trier des offres
+
+       dans le but de trouver l'offre qui me convient le plus
+
+    c) En tant que professionel
+
+       Je veux supprimer une offre
+
+       dans le but d'éviter que des clients ne viennent pour rien
+
+    d) En tant que visiteur
+
+       Je veux consulter les détails d'une offre
+
+       dans le but de conforter mon choix
+
+    e) En tant que professionel
+
+       Je veux modifier une offre
+
+       dans le but de corriger une information devenue erronée
+
+    f) En tant que professionel
+
+       Je veux mettre une offre hors-ligne
+
+       dans le but d'arrêter une facturation quand l'offre n'est plus disponible
