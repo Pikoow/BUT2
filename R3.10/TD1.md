@@ -15,10 +15,19 @@
 ## 3) Listez les User Stories (titres) pour les différentes Epic
 
     Gestion des offres
-        - Création d'une offre
+        - Créer une offre
+        - Trier des offres
+        - Supprimer une offre
         - Consulter le détail d'une offre
         - Modifier une offre
         - Mettre une offre hors ligne
+    
+    Gestion de la facturation
+        - Créer automatiquement une facturation
+        - Annuler une facturation
+        - Redémarrer une facturation
+        - Envoyer une facturation
+        - Payer une facturation
 
 ## 4) Décrivez les US listées (besoin, acteur et valeur métier)
 
