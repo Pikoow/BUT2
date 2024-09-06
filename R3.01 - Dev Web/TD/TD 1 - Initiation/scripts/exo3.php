@@ -14,12 +14,24 @@
         <tr>
             <td>
                 <pre>
-                    <?php print_r($_GET['nom']); ?>
+                    <?php
+                        if (isset($_GET['nom'])) {
+                            print_r($_GET['nom']);
+                        } else {
+                            print_r(" ");
+                        }
+                    ?>
                 </pre>
             </td>
             <td>
                 <pre>
-                    <?php print_r($_GET['prenom']); ?>
+                    <?php
+                        if (isset($_GET['prenom'])) {
+                            print_r($_GET['prenom']);
+                        } else {
+                            print_r(" ");
+                        }
+                    ?>
                 </pre>
             </td>
         </tr>
