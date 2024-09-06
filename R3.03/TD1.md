@@ -64,7 +64,7 @@ classDiagram
     }
 ```
 
-## Question 1
+## Exercice 1
 
 {nbHab > 200000}\
 {nbHab <= 200000}\
@@ -72,4 +72,13 @@ classDiagram
 numEs {frozen.id}\
 {today - dateN >= 18}
 
-## Question 2
+## Exercice 2
+
+Eleve : numEleve\
+Classe : codeClasse\
+Annee : anneeScol
+
+Parce que codeClasse est un id donc un élève ne peut pas faire deux années dans une même classe
+
+On ajoute :
+Un attribut comme "-niveau : String" et on modifie codeClasse chaque année pour qu'un élève puisse redoubler.
