@@ -13,7 +13,7 @@ int main() {
         } else if(errno == ENOTEMPTY) {
             printf("Le dossier n'est pas vide !\n");
         } else if(errno == ENOTDIR) {
-            printf("Le dossier n'est pas un fichier !\n");
+            printf("Le dossier à supprimer n'est pas un dossier !\n");
         } else {
             perror("Erreur inconnue");
         }
