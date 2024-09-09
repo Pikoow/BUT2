@@ -10,3 +10,7 @@
 ### R3.01
 
 [Doc PHP](https://www.php.net/docs.php)
+
+### Devoirs
+
+Pour demain : Apporter son CV mis à jour !!
