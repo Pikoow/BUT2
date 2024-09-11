@@ -1,0 +1,3 @@
+Important :
+- php -S localhost:8888
+- http://localhost:8888/exo2_q1.php
