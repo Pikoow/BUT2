@@ -21,7 +21,7 @@ int main() {
     }
 
     printf("Entrez le nom de la région : ");
-    fgets(region->nom, 21, stdin); 
+    fgets(region->nom, 21, stdin);
 
     printf("Entrez la population de la région : ");
     scanf("%d", &region->population);
