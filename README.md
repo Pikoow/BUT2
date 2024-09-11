@@ -14,3 +14,8 @@
 ### Devoirs
 
 Pour demain : Apporter son CV mis à jour !!
+
+### Liens Youtube
+
+[Créer un README personnel stylé](https://www.youtube.com/watch?v=p5hf8i-OzlQ)\
+[Chnager langue jeu 3ds](https://www.youtube.com/watch?v=LVkZf2yM_UE)
