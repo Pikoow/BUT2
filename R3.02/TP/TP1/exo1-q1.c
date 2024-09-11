@@ -10,5 +10,7 @@ int main() {
     printf("Valeur pointée par pt : %d\n", *pt);
     printf("Valeur de x : %d\n", x);
 
+    free(pt);
+
     return 0;
 }
