@@ -67,6 +67,7 @@
                 echo "Aucun département trouvé.";
             }
         ?>
+        <br />
         <a href="http://localhost:8888/form-reg.php">Retour</a>
     </body>
 </html>
