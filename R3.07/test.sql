@@ -45,13 +45,13 @@ INSERT INTO test._post(iddoc) VALUES (2);
 INSERT INTO test._document(iddoc, content, author) VALUES (1, "Commentaire 1", "Alex");
 INSERT INTO test._comment(iddoc, ref) VALUES (3, 1);
 
-INSERT INTO test._document(iddoc, content, author) VALUES (1, "Commentaire 1", "Bob");
+INSERT INTO test._document(iddoc, content, author) VALUES (2, "Commentaire 1", "Bob");
 INSERT INTO test._comment(iddoc, ref) VALUES (4, 3);
 
-INSERT INTO test._document(iddoc, content, author) VALUES (1, "Commentaire 1", "Dog");
+INSERT INTO test._document(iddoc, content, author) VALUES (3, "Commentaire 1", "Dog");
 INSERT INTO test._comment(iddoc, ref) VALUES (5, 1);
 
-SELECT setval('test._document_iddoc_seq', 14);
+SELECT setval('test._document_iddoc_seq', 3);
 
 DROP SEQUENCE IF EXISTS test._document_iddoc_seq;
 
