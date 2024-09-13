@@ -26,7 +26,7 @@ CREATE OR REPLACE FUNCTION commentaires_sql(ref_in integer)
 WITH RECURSIVE refset(iddoc, ref) AS (
   SELECT iddoc, ref
   FROM forum1._comment
-  WHERE ref = 1
+  WHERE ref = ref_in
   UNION
   SELECT c.iddoc, c.ref
   FROM refset r INNER JOIN forum1._comment c
@@ -34,4 +34,34 @@ WITH RECURSIVE refset(iddoc, ref) AS (
 SELECT * FROM refset;
 $$ language 'sql';
 
-SELECT * FROM commentaires_sql(1);
+CREATE OR REPLACE FUNCTION commentaires(ref_in integer)
+  returns table (iddoc integer, ref integer) as $$
+BEGIN
+  perform * from forum1._document d where d.iddoc = ref_in;
+  if not found then
+    raise notice 'LE document % n''existe pas', ref_in;
+   end if;
+   return query
+    select *
+    from commentaires_sql(ref_in);
+end;
+$$ language 'plpgsql';
+
+SELECT * FROM commentaires(1);
+
+CREATE OR REPLACE FUNCTION user_delete() returns trigger as $$
+BEGIN
+  if old.nickname = 'Anonymous' then
+    raise exception 'L''utilisateur Anonymous n''existe pas';
+  end if;
+  update forum1._document
+  set author = 'Anonymous'
+  where author = old.nickname;
+  return old;
+end;
+$$ language 'plpgsql';
+
+create trigger tg_user_delete
+before delete
+on forum1._user for each row
+execute procedure user_delete();
