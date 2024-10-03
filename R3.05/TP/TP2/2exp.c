@@ -11,3 +11,5 @@ int main() {
 }
 
 /* kill <PID> dans un autre terminal renvoie : "Complété" */
+/* kill -SIGSTOP <PID> pour mettre en pause le programme */
+/* kill -SIGCONT <PID> pour redémarrer le programme */
