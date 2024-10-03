@@ -13,9 +13,9 @@
 
         print_r($var2);
 
-        $deserContent[2014] = [
-            Artiste = "bob";
-        ];
+        #$deserContent[2014] = [
+        #    Artiste = "bob";
+        #];
 
         $serContent = unserialize($deserContent);
         file_put_contents("data_new", $serContent);
