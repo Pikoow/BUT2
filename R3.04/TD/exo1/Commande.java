@@ -1,3 +1,4 @@
+package exo1;
 abstract class Commande {
     String cli;
     int montantHT;
