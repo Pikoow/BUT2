@@ -1,0 +1,40 @@
+set schema 'forum2';
+
+create or replace view forum2.user as
+  select *
+  from forum2._user
+  where nickname <> 'Anonymous'
+  with check option;
+
+start transaction;
+insert into forum2._user(nickname,pass,email)
+values('Vladimir','russia4ever','theboss@krml.ru');
+select * from forum2.user;
+select * from forum2._user;
+rollback;
+
+create or replace view forum2.post as
+  select *
+  from forum2._post natural join forum2._document;
+
+create or replace view forum2.comment as
+  select *
+  from forum2._comment natural join forum2._document;
+  
+----- USER
+-- CREATE
+insert into forum2.user(nickname, pass, email)
+  values('Joe', 'usa-usa-usa', 'theking@whths.org');
+
+-- READ
+select * from forum2.user;
+rollback;
+
+-- UPDATE
+/*update forum2.user
+set nickname = 'Anonymous'
+where nickname = 'Alex';*/
+
+-- DELETE
+
+create or replace 
