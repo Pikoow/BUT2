@@ -103,3 +103,19 @@ INSERT INTO forum2._comment(iddoc, ref) VALUES (14,2);
 --
 -- Pour mettre la sequence à la bonne valeur après les insertions
 select setval('forum2._document_iddoc_seq', 14 );
+
+/*
+-- Autre façon : enchainer les insert
+with insertion as (
+INSERT INTO forum2._document(content, author) 
+  VALUES ('Et moi !', 'Alex') RETURNING iddoc
+)
+insert into forum2._post select iddoc from insertion;
+
+-- A condition de vérifier à chaque création qu'on commente le bon document
+with insertion as (
+INSERT INTO forum2._document(content, author) 
+  VALUES ('Et moi aussi !', 'Arthur') RETURNING iddoc
+)
+insert into forum2._comment(iddoc,ref) select iddoc,6 from insertion;
+*/
