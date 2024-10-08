@@ -2,23 +2,28 @@
 #include <signal.h>
 #include <unistd.h>
 
-void handle_sigint(int sig) {
+void handle_sigusr1(int sig) {
     
-    if (sig == SIGINT) {
+    if (sig == SIGUSR1) {
         printf("\nReçu SIGUSR1.\n");
     }
     
 }
 
 int main() {
-    signal(SIGINT, handle_sigint);
+    printf("PID : %d\n", getpid());
+    fflush(stdout);
 
-    printf("PID %d", getpid());
+    signal(SIGUSR1, handle_sigusr1);
 
-    //int temps = sleep(60);
+    int temps_restant = 60;
     
-    //printf("%d sec\n", temps);
+    while (temps_restant > 0) {
+        temps_restant = sleep(temps_restant);
+        printf("Temps restant = %d\n", temps_restant);
+    }
 
+    printf("Fin de la pause.\n");
     return 0;
 }
 
