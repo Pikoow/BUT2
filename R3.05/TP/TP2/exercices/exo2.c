@@ -26,15 +26,3 @@ int main() {
     printf("Fin de la pause.\n");
     return 0;
 }
-
-    // int temps_restant = sleep(60);
-
-    // if (temps_restant == 0) {
-    //     _exit(0);
-    // } else {
-    //     printf("Temps restant : %d", temps_restant);
-    // }
-    // printf("PID : %d", getpid());
-
-    // signal(SIGUSR1, handle_sigint);
-    // signal(SIGUSR2, handle_sigint);
