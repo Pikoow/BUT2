@@ -1,1 +1,0 @@
-a:2:{i:0;a:4:{s:3:"nom";s:6:"Lechat";s:6:"prenom";s:6:"Pierre";s:5:"email";s:24:"pierre.lechat8@gmail.com";s:6:"avatar";s:14:"1727795388.png";}i:1;a:4:{s:3:"nom";s:7:"Rolland";s:6:"prenom";s:4:"Stan";s:5:"email";s:22:"stan.rolland@gmail.com";s:6:"avatar";s:14:"1727796895.png";}}
