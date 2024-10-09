@@ -24,6 +24,11 @@ void initEchiquier(Echiquier E) {
 }
 
 void ajouterPiece(Echiquier E, int I, piece P) {
+    if (I < 0 || I >= TAILLE) {
+        printf("Erreur : Indice de ligne invalide\n");
+        return;
+    }
+
     element *newElement = (element *)malloc(sizeof(element));
 
     newElement->val = P;
@@ -32,6 +37,11 @@ void ajouterPiece(Echiquier E, int I, piece P) {
 }
 
 bool caseVide(Echiquier E, int L, char C) {
+    if (L < 0 || L >= TAILLE || C < 'A' || C > 'H') {
+        printf("Erreur : Coordonnées de case invalides\n");
+        return false;
+    }
+
     int colIndex = C - 'A';
 
     element *current = E[L];
@@ -45,23 +55,7 @@ bool caseVide(Echiquier E, int L, char C) {
     return true;
 }
 
-void afficherEchiquierSchema(Echiquier E) {
-    for (int i = 0; i < TAILLE; i++) {
-        printf("%d -> ", i);
-        element *current = E[i];
-        if (current == NULL) {
-            printf("[NULL]\n");
-        } else {
-            while (current != NULL) {
-                printf("[%c %s %c]", current->val.numColonne, current->val.nom, current->val.couleur);
-                current = current->svt;
-            }
-            printf("\n");
-        }
-    }
-}
-
-void afficherEchiquierComplet(Echiquier E) {
+void afficherEchiquier(Echiquier E) {
     printf("      A          B          C          D          E          F          G          H\n");
     for (int i = 0; i < TAILLE; i++) {
         printf("%d ", i);
@@ -112,18 +106,12 @@ int main() {
 
     // Test caseVide
     printf("La case (0, A) est vide : %s\n", caseVide(E, 0, 'A') ? "oui" : "non");
-    printf("La case (1, B) est vide : %s\n", caseVide(E, 4, 'G') ? "oui" : "non");
+    printf("La case (6, H) est vide : %s\n", caseVide(E, 6, 'H') ? "oui" : "non");
+    printf("La case (4, G) est vide : %s\n", caseVide(E, 4, 'G') ? "oui" : "non");
     printf("La case (1, F) est vide : %s\n", caseVide(E, 1, 'F') ? "oui" : "non");
 
     // Afficher l'échiquier
-    printf("Quel mode voulez vous afficher : Schéma (S), Complet (C) ? ");
-    char mode;
-    scanf("%c", &mode);
-    if (mode == 'S') {
-        afficherEchiquierSchema(E);
-    } else if (mode == 'C') {
-        afficherEchiquierComplet(E);
-    }
+    afficherEchiquier(E);
     
     return 0;
 }
