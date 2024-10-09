@@ -9,17 +9,23 @@
     <h1>Infos</h1>
     <?php
     if (isset($_POST["nom"])) {
-        echo "<pre>";
-        print_r($_POST);
-        echo "</pre>";
-        $insee = $_POST["num_insee"];
         $nom = $_POST["nom"];
+        $insee = $_POST["num_insee"];
         $prenom = $_POST["prenom"];
         $mail = $_POST["email"];
         $sexe = $_POST["sexe"];
         $classe = $_POST["classes"];
-        $line = $nom . ";" . $prenom . ";" . $mail . ";" . $insee . ";" . $sexe;
+        $line = "\n" . strtoupper($nom) . ";" . strtoupper($prenom) . ";" . $mail . ";" . $insee . ";" . $classe . ";" . $sexe;
         file_put_contents('data.csv', $line, FILE_APPEND);
+
+        $file = $_FILES['photo'];
+        $fileTmpName = $file['tmp_name'];
+
+        $explodedExplodedLine = explode('/', $insee);
+        $insee = trim($explodedExplodedLine[0]);
+        $name = $insee . ".png";
+        $destination = "avatars/$name";
+        move_uploaded_file($fileTmpName, $destination);
     } else {
     ?>
     <form action="crea.php" method="POST" enctype="multipart/form-data">
@@ -36,13 +42,13 @@
         <input type="email" id="email" name="email" required><br><br>
         
         <label for="sexe">Sexe :</label>
-        <input type=radio id="sexe" name="sexe" value="H">
+        <input type=radio id="sexe" name="sexe" value="H" checked>
         <label for="homme">Homme</label>
         <input type=radio id="sexe" name="sexe" value="F">
         <label for="femme">Femme</label><br><br>
 
         <label for="classe">Classe :</label>
-        <select name="classes" id="classes">
+        <select name="classes" id="classes" required>
             <option value="">--Classes--</option>
             <option value="6">6</option>
             <option value="5">5</option>
@@ -57,6 +63,10 @@
         <input type="file" id="photo" name="photo" required><br><br>
 
         <input type="submit" value="Soumettre">
+        <br>
+        <a href="http://localhost:8888/import.php">Importer avec un fichier</a>
+        <br>
+        <a href="http://localhost:8888/liste-classe.php">Afficher la liste</a>
     </form>
     <?php
     }

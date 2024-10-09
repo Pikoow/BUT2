@@ -54,6 +54,10 @@
 
         <input type="submit" value="Envoyer">
     </form>
+    <br>
+    <a href="http://localhost:8888/crea.php">Importer manuellement</a>
+    <br>
+    <a href="http://localhost:8888/liste-classe.php">Afficher la liste</a>
     <?php
     }
     ?>
