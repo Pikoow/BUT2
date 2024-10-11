@@ -37,4 +37,6 @@ where nickname = 'Alex';*/
 
 -- DELETE
 
-create or replace 
+
+
+insert into forum2.comment(ref,content,author) values(1,'Sed venenatis tellus lectus, vel fermentum purus varius ut. ','Donald');
