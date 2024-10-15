@@ -1,45 +1,45 @@
-let $message = prompt("Quel mot voulez-vous traduire ?");
+let message = prompt("Quel mot voulez-vous traduire ?");
 
-$formattedMessage = $message.toLowerCase().trim();
+formattedMessage = message.toLowerCase().trim();
 
 function louchebem($message) {
-    let $premiereLettre = $message.charAt(0).toLowerCase();
+    let premiereLettre = message.charAt(0).toLowerCase();
 
-    let $fin;
+    let fin;
 
-    switch ($premiereLettre) {
+    switch (premiereLettre) {
         case "b":
-            $fin = "em";
+            fin = "em";
             break;
 
         case "c":
-            $fin = "ès";
+            fin = "ès";
             break;
 
         case "d":
-            $fin = "é";
+            fin = "é";
             break;
 
         case "f":
-            $fin = "oque";
+            fin = "oque";
             break;
 
         case "m":
-            $fin = "uche";
+            fin = "uche";
             break;
 
         case "p":
-            $fin = "é";
+            fin = "é";
             break;
 
         default:
-            $fin = "ès";
+            fin = "ès";
             break;
     }
 
-    $message = $message.substring(1, $message.length);
+    message = message.substring(1, message.length);
 
-    return `L${$message}${$premiereLettre}${$fin}`;
+    return `L${message}${premiereLettre}${fin}`;
 }
 
-console.log(louchebem($formattedMessage));
+console.log(louchebem(formattedMessage));
