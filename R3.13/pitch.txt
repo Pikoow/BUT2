@@ -1,18 +1,37 @@
-Situation actuelle :
-> 2e année de BUT Info - Parcours C
+Bonjour,
 
-Projet professionel :
-> Je vise votre offre de stage de developpement logiciel.
+Actuellement en deuxième année de BUT Informatique, parcours C, je souhaite aujourd'hui partager avec vous mon parcours
+et mes compétences pour le poste de stagiaire en développement logiciel au sein de votre entreprise.
 
-Compétences clefs :
-> Aperçu global des compétences informatiques
-> Exemple STAR hard skills avec argumentation
-Contexte - Tache - Action - Resultat
+Tout d'abord, permettez-moi de vous donner un aperçu global de mes compétences en informatique.
 
-Qualités personnelles :
-> Exemple STAR soft skills avec argumentation
+Durant ma formation, j'ai eu l'opportunité de me familiariser avec plusieurs technologies, comme le développement web,
+la gestion de bases de données, et la programmation orientée objet. Par exemple, j’ai récemment travaillé sur un projet
+où je devais développer une application pour le suivi de séries et de films. Ce projet a demandé de solides compétences
+en programmation ainsi qu’une bonne organisation et une rigueur en gestion de projet, des compétences clés que je suis
+prêt à approfondir et appliquer en milieu professionnel.
 
-Conclusion / ouverture :
-> Adéquation Profil <--> Poste
-> Intérêt pour l'entreprise
-> Pourquoi moi ?
+Un exemple concret pour illustrer mes compétences serait mon travail sur un projet de développement d'une plateforme de suivi
+de contenu. Nous devions concevoir une application qui centralise le suivi des séries et films. Ma mission principale était de
+structurer la base de données et d’implémenter les fonctionnalités de suivi personnalisé pour chaque utilisateur.
+Pour ce faire, j’ai utilisé des technologies comme JavaScript, Node.js et MongoDB pour créer un système fluide de gestion
+des profils et de recommandation. Ce projet a abouti à une application fonctionnelle, avec une interface utilisateur intuitive,
+et a reçu des retours très positifs de nos utilisateurs tests.
+
+Au-delà de mes compétences techniques, je pense que mes qualités personnelles peuvent également être un atout pour votre équipe.
+Je suis quelqu'un de persévérant et curieux, et j'aime travailler en équipe.
+
+Pour illustrer, j’ai eu l’occasion de démontrer ces qualités dans un projet de groupe en développement logiciel.
+Nous étions confrontés à un bug critique peu avant la fin d’un projet. Ma tâche consistait à collaborer avec mon équipe pour identifier
+l’origine du problème et trouver une solution dans un délai limité. J’ai proposé d’organiser une réunion technique pour brainstormer,
+et en travaillant ensemble, nous avons rapidement identifié la source de l’erreur et implémenté un correctif. Cette initiative a permis de
+finaliser le projet dans les délais, renforçant notre cohésion d’équipe et assurant un produit de qualité.
+
+Pour conclure, je pense que mon profil technique et mes qualités personnelles sont en adéquation avec ce poste de développement
+logiciel. L’opportunité de travailler dans votre entreprise serait pour moi l’occasion d’apprendre aux côtés de professionnels,
+de perfectionner mes compétences, et de contribuer à des projets innovants.
+
+Enfin, ce qui me distingue, c’est ma capacité d’adaptation et mon envie constante d’apprendre et d’aller au-delà des attentes.
+En choisissant mon profil, vous intégrez quelqu'un qui a une vision globale des projets informatiques et un réel engagement à apporter une valeur ajoutée.
+
+Merci de votre attention, et je reste disponible pour toute question !
