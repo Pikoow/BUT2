@@ -1,10 +1,10 @@
 public class Client {
     public static void main(String[] args) {
-        FabriquePizza fabriqueBretagne = new FabriquePizzaBretagne();
+        Fabrique fabriqueBretagne = new FabriqueBretagne();
         Pizza pizzaBretagne = new Pizza(fabriqueBretagne);
         pizzaBretagne.afficherDetails();
 
-        FabriquePizza fabriqueAlsace = new FabriquePizzaAlsace();
+        Fabrique fabriqueAlsace = new FabriqueAlsace();
         Pizza pizzaAlsace = new Pizza(fabriqueAlsace);
         pizzaAlsace.afficherDetails();
     }
