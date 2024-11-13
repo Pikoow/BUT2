@@ -28,7 +28,7 @@ public class PosteMeteo implements Observable {
 
     public void saisirTemperature() {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Entrez la température : ");
+        System.out.print("Entrez la température  de : ");
         int temperature = scanner.nextInt();
         notifyObservers(temperature);   // Notifier les stations de la nouvelle température
     }
