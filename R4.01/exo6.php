@@ -10,6 +10,19 @@ $listePays =  file_get_contents('https://restcountries.com/v3.1/all?fields=name,
 
 $decodeJson = json_decode($listePays, true);
 
+$currentPage = isset($_GET['page']) && is_numeric($_GET['page']) ? (int)$_GET['page'] : 1;
+
+$articlesPerPage = 10;
+$offset = ($currentPage - 1) * $articlesPerPage;
+$limit = $articlesPerPage;
+
+$articles = array_slice($decodeJson, $offset, $limit, true);
+
+$totalPages = ceil(count($decodeJson) / $articlesPerPage);
+
+$previousPage = $currentPage > 1 ? $currentPage - 1 : 1;
+$nextPage = $currentPage < $totalPages ? $currentPage + 1 : $totalPages;
+
 ?>
 
 <table>
@@ -24,7 +37,7 @@ $decodeJson = json_decode($listePays, true);
 
 <?php
 
-for ($valeur = 0 ; $valeur < 10 ; $valeur++) {
+for ($valeur = $currentPage - 1 * 10 ; $valeur < $currentPage * 10 ; $valeur++) {
 
 ?>
 
@@ -40,5 +53,16 @@ for ($valeur = 0 ; $valeur < 10 ; $valeur++) {
 
 ?>
 
-<button href="http://localhost:8080/exo6.php?page=<?php $page + 1 ?>">Précédent</button>
-<button href="http://localhost:8080/exo6.php?page=<?php $page - 1 ?>">Suivant</button>
+<div>
+    <?php 
+        if ($currentPage !== 1) {
+    ?>
+    <a href="?page=<?php echo $previousPage; ?>">Page précédente</a>
+    <?php } ?>
+    <?php
+        $maxPage = ceil(count($decodeJson)/$articlesPerPage);
+        if ($currentPage < $maxPage) {
+    ?>
+    <a href="?page=<?php echo $nextPage; ?>">Page suivante</a>
+    <?php }?>
+</div>

@@ -6,10 +6,6 @@ stream_context_set_default([
     ]
 ]);
 
-$listePays =  file_get_contents('https://restcountries.com/v3.1/all?fields=name,cca3,capital,flags');
-
-$decodeJson = json_decode($listePays, true);
-
 ?>
 
 <table>
