@@ -20,6 +20,11 @@
 		file_put_contents($filePath, $encodedData);
 	}
 	
+	function saveAll($data) {
+		$filePath = __DIR__ . '/data.json';
+		$encodedData = json_encode($data, JSON_PRETTY_PRINT);
+		file_put_contents($filePath, $encodedData);
+	}
 
 	$app->get('/', function($req, $resp) {
 		return buildResponse($resp, 'Ca maaaaarche !');
@@ -54,14 +59,54 @@
 	
 		save($params);
 	
-		$responseBody = $resp->getBody();
-		$responseBody->write('Article ajouté avec succès.');
 		return $resp->withStatus(200);
+	});
 
+	$app->put('/articles/{id}', function ($req, $resp, $args) {
+		global $articles;
+	
+		$id = $args['id'];
+		if (!isset($articles[$id])) {
+			return $resp->withStatus(404)->write('Article not found');
+		}
+	
+		$params = $req->getParsedBody();
+		$articles[$id] = $params;
+		saveAll($articles);
+	
+		return $resp->withStatus(200);
+	});
+
+	$app->patch('/articles/{id}', function ($req, $resp, $args) {
+		global $articles;
+	
+		$id = $args['id'];
+		if (!isset($articles[$id])) {
+			return $resp->withStatus(404)->write('Article not found');
+		}
+	
+		$params = $req->getParsedBody();
+		$articles[$id] = array_merge($articles[$id], $params);
+		saveAll($articles);
+	
+		return $resp->withStatus(200);
+	});
+
+	$app->delete('/articles/{id}', function ($req, $resp, $args) {
+		global $articles;
+	
+		$id = $args['id'];
+		if (!isset($articles[$id])) {
+			return $resp->withStatus(404)->write('Article not found');
+		}
+	
+		unset($articles[$id]);
+		saveAll($articles);
+	
+		return $resp->withStatus(200);
 	});
 
 	// Fix "bug" (?) avec PUT vide (body non parsé)
 	$app->addBodyParsingMiddleware();
 	$app->run();
-
 ?>
