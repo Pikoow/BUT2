@@ -1,0 +1,17 @@
+{
+    "1": {
+        "nom": "Livre",
+        "qte": 5,
+        "prix": 2
+    },
+    "2": {
+        "nom": "Crayon",
+        "qte": 10,
+        "prix": 1
+    },
+    "3": {
+        "nom": "Stylo",
+        "qte": "10",
+        "prix": "0.5"
+    }
+}
