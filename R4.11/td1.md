@@ -27,7 +27,7 @@ exemple : un manager et un employé
 
 C'est ce qui va contrôler et piloter le système opérant.
 
-exemple : 
+exemple :
 
 - système opérant
 
@@ -73,8 +73,6 @@ flux physique en entrée ou sortie du système opérant
 
 flux d’information en entrée ou sortie du SI
 
-- 
-
 contraintes en entrée du système de pilotage
 
 - un retard ou un problème technique
@@ -83,12 +81,12 @@ flux de décision en sortie du système de pilotage
 
 - engager un interimaire, appeler le service de réparation.
 
-2. Où se situe le processus de fabrication d’une pizza dans
+Où se situe le processus de fabrication d’une pizza dans
 ce schéma ?
 
 - Il se trouve dans le système opérant.
 
-3. Donner des exemples de flux qui circulent entre les sous-systèmes
+Donner des exemples de flux qui circulent entre les sous-systèmes
 
 Une demande du personnel et une réponse des responsables.
 
@@ -115,4 +113,3 @@ Les informations diffusées sont que le plat est prêt et qu'il peut être déli
 - Ensuite la production va vérifier auprès de l'entrepôt si des stocks sont disponibles. Si le stock et OK, l'information est transmise au service production.
 - Si non, le manque est signalé au service qui passe une commande auprès du fournisseur (et qui prévient l'entrepôt que la commande a été passée) qui leur livre des stocks.
 - Et enfin une fois les stocks prêts la production peut se mettre au travail et livrer le client.
-
