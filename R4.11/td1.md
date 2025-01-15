@@ -88,5 +88,31 @@ ce schéma ?
 
 - Il se trouve dans le système opérant.
 
-3. Donner des exemples de flux qui circulent entre les soussystèmes
+3. Donner des exemples de flux qui circulent entre les sous-systèmes
+
+Une demande du personnel et une réponse des responsables.
+
+## Exercice 3
+
+L'objectif de ce processus est que le client mange son repas et qu'il paye le restaurant.
+
+Les ressources utilisées sont des ressources humaines, des ingrédients, une caisse automatique, un salle, un menu, un carnet de notes.
+
+Les acteurs sont le client, le serveur, les cuisiniers et le responsable de la caisse.
+
+Les données collectées sont le choix de plat du client et le prix.
+
+Les données mémorisées sont le choix de plat du client.
+
+Les données sont transmises aux différents partis pour qu'ils effectuent leurs missions.
+
+Les informations diffusées sont que le plat est prêt et qu'il peut être délivré en salle.
+
+## Exercice 4
+
+- Ce diagramme de flux représente le fonctionnement d'une entreprise fabriquant des chaises.
+- Tout part du client qui va donner un bon de commande au service commercial, qui va le facturer et ensuite transmettre la commande au service de producation.
+- Ensuite la production va vérifier auprès de l'entrepôt si des stocks sont disponibles. Si le stock et OK, l'information est transmise au service production.
+- Si non, le manque est signalé au service qui passe une commande auprès du fournisseur (et qui prévient l'entrepôt que la commande a été passée) qui leur livre des stocks.
+- Et enfin une fois les stocks prêts la production peut se mettre au travail et livrer le client.
 
