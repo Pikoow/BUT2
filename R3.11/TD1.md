@@ -1,9 +1,8 @@
-# Theme 3 : Qui est concerné par le RGPD ?
+# TD1
 
-## Exercice : Le RGPD est il applicable ?
+Police 11-12 en PDF.
+Pour le 26/01.
 
-1) Oui
-2) Non
-3) Non
-4) Oui
-5) Non
+Mentions légales -> 5 pages
+CGU -> 4 pages
+CGV -> 2 pages

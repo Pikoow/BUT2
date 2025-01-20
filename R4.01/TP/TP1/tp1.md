@@ -1,0 +1,14 @@
+# TP1
+
+Exercice 1 :
+
+- https://restcountries.com/v3.1/currency/eur
+- https://restcountries.com/v3.1/lang/french
+- https://restcountries.com/v3.1/region/asia
+- https://restcountries.com/v3.1/capital/paris
+
+Exercice 2 :
+
+- Le logiciel marche !
+
+Exercice 3 :
