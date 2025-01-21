@@ -42,4 +42,6 @@ void do_job_fils() {
 int main() {
     do_job_pere();
     do_job_fils();
+
+    return 0;
 }
