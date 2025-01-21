@@ -89,4 +89,4 @@ Conclusion : 25.15.48.0 = réseau → Numéro réseau.
 ## Exercice 2
 
 1. La notion de ports (apportée par TCP et UDP) permet de démultiplier le traffic vers différentes applications de la même machine.
-2. 
+2.  
