@@ -9,4 +9,10 @@ Exercice 1 :
 
 Exercice 2 :
 
-- Le logiciel marche !
+- GET
+- 200
+- application/json
+
+- GET
+- 404
+- application/json
