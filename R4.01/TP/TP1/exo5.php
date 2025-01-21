@@ -6,6 +6,10 @@ stream_context_set_default([
     ]
 ]);
 
+$contenu = file_get_contents('https://restcountries.com/v3.1/all?fields=name,cca3,capital,flags');
+
+$decodeJson = json_decode($contenu, true);
+
 ?>
 
 <table>
@@ -21,7 +25,6 @@ stream_context_set_default([
 for ($valeur = 0 ; $valeur < count($decodeJson) ; $valeur++) {
 
 ?>
-
     <tr>
         <td><?php echo htmlentities($decodeJson[$valeur]['name']['common']) ?></td>
         <td><?php echo htmlentities($decodeJson[$valeur]['cca3']) ?></td>
