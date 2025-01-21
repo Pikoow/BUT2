@@ -85,3 +85,5 @@ Adresse de broadcast :
 - Complète les bits restants en 1 : 00011001.00001111.00111111.11111111 → 25.15.63.255
 
 Conclusion : 25.15.48.0 = réseau → Numéro réseau.
+
+## Exercice 2
