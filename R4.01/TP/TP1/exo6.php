@@ -2,17 +2,18 @@
 
 stream_context_set_default([
     'http' => [
-        'proxy' => '129.20.239.11:3128'
+        'proxy' => '129.20.239.11:3128',
+        'request_fulluri' => true,
     ]
 ]);
 
-$listePays = file_get_contents('https://restcountries.com/v3.1/all?fields=name,cca3,capital,flags,currencies,languages');
+$listePays = file_get_contents('https://restcountries.com/v3.1/all?fields=name,cca3,capital,flags,languages,currencies');
 
 $decodeJson = json_decode($listePays, true);
 
 $currentPage = isset($_GET['page']) && is_numeric($_GET['page']) ? (int)$_GET['page'] : 1;
 $articlesPerPage = 10;
-$offset = ($currentPage - 1) * $articlesPerPage;
+$offset = ($currentPage - 1) * $articlesPerPage; // Calcul de l'offset
 
 $articles = array_slice($decodeJson, $offset, $articlesPerPage);
 
