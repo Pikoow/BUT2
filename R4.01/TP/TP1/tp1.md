@@ -10,5 +10,3 @@ Exercice 1 :
 Exercice 2 :
 
 - Le logiciel marche !
-
-Exercice 3 :
