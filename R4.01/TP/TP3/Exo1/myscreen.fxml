@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="FxController">
+    <children>
+        <Label fx:id="m_message" layoutX="50" layoutY="50" />
+        <Button layoutX="50" layoutY="100" text="Say Hello" onAction="#sayHelloWorld" />
+    </children>
+</AnchorPane>
