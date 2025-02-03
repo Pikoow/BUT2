@@ -19,6 +19,12 @@ db.games.distinct("title")
 
 6. Years of release.*
 db.games.find({},{ release_temp: true })
+db.games.aggregate(
+    [ { $project: {
+        year: { $year: "release_temp" }
+    } }
+    ]
+)
 
 7. Games with a id less than 1000
 db.games.find(
