@@ -78,11 +78,10 @@ db.game.find(
 ## Partie 4.2
 
 1. use tp
-2. o
-db.people.insertMany([
-    {_id: 1, name: "Alice", age: 20 },
-    {_id: 2, name: "Bob", age: 35 }
-])
+2. db.people.insertMany([
+       {id: 1, name: "Alice", age: 20 },
+       {id: 1, name: "Bob", age: 35 }
+   ])
 3. show dbs
 4. db
 5. db.people.drop()
