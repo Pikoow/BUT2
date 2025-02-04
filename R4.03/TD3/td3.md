@@ -1,6 +1,6 @@
 # TD3
 
-## Partie 4
+## Partie 4.1
 
 1. All fields of game.
 db.game.find({})
@@ -19,12 +19,6 @@ db.game.distinct("title")
 
 6. Years of release.*
 db.game.find({},{ release_temp: true })
-db.game.aggregate(
-    [ { $project: {
-        year: { $year: "release_temp" }
-    } }
-    ]
-)
 
 7. game with a id less than 1000
 db.game.find(
@@ -35,7 +29,7 @@ db.game.find(
 db.game.find(
     {
         id: { $gt: 48000 },
-        release_temp: { $gte: 2000-01-01, $lte: 2000-12-31 }
+        rel: { $gte: ISODate("2000-01-01T00:00:00.000Z"), $lte: ISODate("2000-12-31T00:00:00.000Z") }
     }
 )
 
@@ -50,14 +44,19 @@ db.game.aggregate(
 )
 
 11. Number of game per year.*
-db.game.aggregate(
-    { $group: { _id: "$rel", count: { $sum: 1 } } }
-)
+db.game.aggregate([
+    {
+        $group: {
+            _id: {$year: "$rel"},
+            count: { $sum: 1 }
+        }
+    }
+])
 
 12. Number of game per year with at least 3 game.*
 db.game.aggregate(
     [
-        { $group: { _id: "$release_temp", count: { $sum: 1 } } },
+        { $group: { _id: "$rel", count: { $sum: 1 } } },
         { $match: { count: { $gte: 3 } } }
     ]
 )
@@ -75,3 +74,15 @@ db.game.find(
     },
     { id: true }
 )
+
+## Partie 4.2
+
+1. use tp
+2. o
+db.people.insertMany([
+    {_id: 1, name: "Alice", age: 20 },
+    {_id: 2, name: "Bob", age: 35 }
+])
+3. show dbs
+4. db
+5. db.people.drop()
