@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="117.0" prefWidth="392.0" xmlns:fx="http://javafx.com/fxml" fx:controller="MyView">
+	<children>
+		<Label layoutX="33.0" layoutY="17.0" text="Tapez votre nom" />
+		<TextField fx:id="m_input" layoutX="167" layoutY="12" prefWidth="200" />
+		<Button defaultButton="true" layoutX="167.0" layoutY="46.0" prefWidth="200.0" onAction="#handleSayHello" text="Entrer" />
+		<Label id="console" fx:id="m_output" layoutX="32.0" layoutY="81.0" prefHeight="26.0" prefWidth="335.0" />
+	</children>
+</AnchorPane>
