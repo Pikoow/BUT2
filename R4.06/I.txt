@@ -22,3 +22,23 @@ Rapport de stage :
     - Aspirer vous à travailler dans le meme genre d'envoiromenent, le meme metier la meme entreprise ?
     - Hard skills et soft skills
     - Court, moyen et long terme
+
+Infographie :
+- Tire son nom du graphisme d'information
+- Représentation visuelle d'infos ou de données
+- Outils de com qui vient du marketing
+- Une page (format portrait), ressemble à une affiche mais un poster qui apprend qqch
+- Présenter l'essentiel de façon claire créative voir ludique (pédogogique didactique)
+
+Les éléments qui la compose :
+- Un titre
+- Un texte minimal mais un petit peu
+- Des chiffres (mis en évidence et on doit se pencher pour voir ce que ça veut dire (taille exagéré), graphiques, camemberts, stats, pourcentages)
+- Images (formes, dessins, icones, personnages)
+- Couleurs
+
+Pourquoi ?
+- Pour visualiser des données, comparer des données
+- Pour expliquer un processus étape par étape
+- Présenter une carte
+- Présenter une chronologie
