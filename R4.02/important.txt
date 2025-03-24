@@ -1,0 +1,10 @@
+Bonjour,
+
+J'ai eu un problème pour récupérer une image Docker et j'ai envoyé un ticket au CRI mais je n'ai pas eu de réponse.
+Je n'ai donc pas pu faire mon TP.
+
+Le problème à été résolu à 10h05. J'ai donc fait le début du TP.
+
+Cordialement,
+
+Pierre Lechat

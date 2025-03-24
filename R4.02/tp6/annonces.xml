@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<annonces>
+    <description>Échantillon des annonces</description>
+
+    <avion id="456" année="1989">
+        <fabricant>Robin</fabricant>
+        <modèle>DR 400</modèle>
+        <couleur>bleu</couleur>
+        <couleur>jaune</couleur>
+        <description>Peinture neuve, intérieur refait, glass cockpit</description>
+        <prix monnaie="€">23000</prix>
+        <prix monnaie="$">24500</prix>
+        <vendeur id="23" téléphone="09 91 82 73 64">Skyway Aircrafts</vendeur>
+        <lieu>
+            <pays>France</pays>
+            <ville>Nantes</ville>
+        </lieu>
+    </avion>
+
+    <camion id="315" année="1998">
+        <fabricant>Renault Trucks</fabricant>
+        <modèle>T</modèle>
+        <couleur>noir</couleur>
+        <couleur>or</couleur>
+        <description>moteur révisé</description>
+        <prix monnaie="€">32000</prix>
+        <vendeur id="84" téléphone="09 73 64 91 82">Camiokaz</vendeur>
+        <lieu>
+            <ville>Morlaix</ville>
+        </lieu>
+    </camion>
+
+    <avion id="159">
+        <fabricant>Fouga</fabricant>
+        <modèle>Magister</modèle>
+        <couleur>gris clair</couleur>
+        <description>non volable, à emporter dans l'état</description>
+        <vendeur id="23" téléphone="09 91 82 73 64">Skyway Aircrafts</vendeur>
+        <lieu>
+            <description>Il est sur le rond-point de l'aéroport</description>
+            <ville>Morlaix</ville>
+        </lieu>
+    </avion>
+
+    <avion id="1872" année="1995">
+        <fabricant>Cessna</fabricant>
+        <modèle>411</modèle>
+        <couleur>jaune</couleur>
+        <description/>
+        <prix monnaie="€"></prix>
+        <prix monnaie="$">51000</prix>
+        <vendeur id="23" téléphone="09 91 82 73 64">Skyway Aircrafts</vendeur>
+        <lieu>
+            <pays>France</pays>
+            <ville>Nantes</ville>
+        </lieu>
+    </avion>
+
+    <avion id="442">
+        <description>Annonce retirée</description>
+    </avion>
+
+    <avion id="882" année="1991">
+        <fabricant>Robin</fabricant>
+        <modèle>CAP 10</modèle>
+        <couleur>blanc</couleur>
+        <couleur>vert</couleur>
+        <description>repères en bout d'ailes</description>
+        <prix monnaie="€">37000</prix>
+        <prix monnaie="$">39400</prix>
+        <vendeur id="23" téléphone="09 91 82 73 64">Skyway Aircrafts</vendeur>
+        <lieu>
+            <pays>France</pays>
+            <ville>Nantes</ville>
+        </lieu>
+    </avion>
+
+
+</annonces>

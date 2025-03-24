@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+  <xs:element name="massifs" type="ElemMassifs"/>
+
+  <!-- Définition de l'élément <massifs> -->
+  <xs:complexType name="ElemMassifs">
+    <xs:sequence>
+      <xs:element name="massif" type="ElemMassif" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- Définition de l'élément <massif> -->
+  <xs:complexType name="ElemMassif">
+    <xs:sequence>
+      <xs:element name="département" type="ElemDépartement" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="sommet" type="ElemSommet" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="glacier" type="ElemGlacier" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="massif" type="ElemMassif" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="lac" type="ElemLac" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="nom" type="xs:string" use="required"/>
+  </xs:complexType>
+
+  <!-- Définition de l'élément <département> -->
+  <xs:complexType name="ElemDépartement">
+    <xs:simpleContent>
+      <xs:extension base="TypeNomDept">
+        <xs:attribute name="numéro" type="TypeNumeroDept" use="required"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <!-- Définition de l'élément <sommet> -->
+  <xs:complexType name="ElemSommet" mixed="true">
+    <xs:attribute name="nom" type="xs:string" use="required"/>
+    <xs:attribute name="altitude" type="TypeAltitude" use="required"/>
+  </xs:complexType>
+
+  <!-- Définition de l'élément <glacier> -->
+  <xs:complexType name="ElemGlacier" mixed="true">
+    <xs:attribute name="nom" type="xs:string" use="required"/>
+    <xs:attribute name="altitude" type="TypeAltitude"/>
+    <xs:attribute name="longueur" type="TypeLongueur"/>
+    <xs:attribute name="surface" type="TypeSurface"/>
+  </xs:complexType>
+
+  <!-- Définition de l'élément <lac> -->
+  <xs:complexType name="ElemLac">
+    <xs:attribute name="nom" type="xs:string" use="required"/>
+    <xs:attribute name="altitude" type="TypeAltitude" use="required"/>
+    <xs:attribute name="surface" type="TypeSurface"/>
+    <xs:attribute name="naturel" type="TypeLacNaturel"/>
+  </xs:complexType>
+
+  <!-- Définition du type altitude -->
+  <xs:simpleType name="TypeAltitude">
+    <xs:restriction base="xs:integer">
+      <xs:minInclusive value="500"/>
+      <xs:maxExclusive value="5000"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- Définition du type longueur -->
+  <xs:simpleType name="TypeLongueur">
+    <xs:restriction base="xs:decimal">
+      <xs:minInclusive value="0.5"/>
+      <xs:maxExclusive value="15"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- Définition du type surface -->
+  <xs:simpleType name="TypeSurface">
+    <xs:restriction base="xs:decimal">
+      <xs:minInclusive value="0"/>
+      <xs:maxInclusive value="2"/>
+      <xs:fractionDigits value="3"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- Définition du type numero dept -->
+  <xs:simpleType name="TypeNumeroDept">
+    <xs:restriction base="xs:integer">
+      <xs:pattern value="[0-9][0-9]|2[AB]"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- Définition du type nom dept -->
+  <xs:simpleType name="TypeNomDept">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="1"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- Définition du type lac naturel -->
+  <xs:simpleType name="TypeLacNaturel">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="oui"/>
+      <xs:enumeration value="non"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+</xs:schema>

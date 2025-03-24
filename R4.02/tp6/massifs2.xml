@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<massifs>
+
+    <massif nom="Jura">
+        <département numéro="01">Ain</département>
+        <département numéro="25">Doubs</département>
+        <département numéro="39">Jura</département>
+        <département numéro="73">Savoie</département>
+        <sommet nom="Le Crêt de la Neige" altitude="1720">Point culminant du Jura</sommet>
+        <sommet nom="Le Grand Colombier" altitude="1534"/>
+        <sommet nom="Le Mont du Chat" altitude="1496"/>
+        <sommet nom="Le Mont d'Or" altitude="1463"/>
+    </massif>
+
+    <massif nom="Les Alpes">
+        <département numéro="05">Hautes-Alpes</département>
+        <département numéro="38">Isère</département>
+        <département numéro="74">Haute-Savoie</département>
+        <département numéro="73">Savoie</département>
+        <massif nom="Massif du Mont-Blanc">
+            <département numéro="74">Haute-Savoie</département>
+            <département numéro="73">Savoie</département>
+            <sommet nom="Le Mont Blanc" altitude="4808">Le plus haut sommet des Alpes</sommet>
+            <sommet nom="Le Mont Maudit" altitude="4465"/>
+            <sommet nom="L'Aiguille du Goûter" altitude="3863"/>
+            <sommet nom="Les Grandes Jorasses" altitude="4208"/>
+            <sommet nom="L'Aiguille Verte" altitude="4122"/>
+            <sommet nom="Le Mont Brouillard" altitude="4068"/>
+            <sommet nom="L'Aiguille du Midi" altitude="3842"/>
+            <glacier nom="Le Glacier d'Argentière" altitude="3400"/>
+            <glacier nom="La Mer de Glace" longueur="7">Le plus grand glacier du massif</glacier>
+            <lac nom="Lac Blanc" altitude="2352" surface="0.02" naturel="oui"/>
+            <lac nom="Lac du Brévent" altitude="2125" surface="0.024" naturel="oui"/>
+            <lac nom="Lac des Gaillands" altitude="1017" naturel="non"/>
+        </massif>
+        <massif nom="Massif de la Vanoise">
+            <département numéro="73">Savoie</département>
+            <sommet nom="La Grande Casse" altitude="3855"/>
+            <sommet nom="Le Mont Pourri" altitude="3779"/>
+            <sommet nom="Le Sommet de Bellecôte" altitude="3417"/>
+            <glacier nom="Les Glaciers de la Vanoise"/>
+        </massif>
+        <massif nom="Massif des Écrins">
+            <département numéro="05">Hautes-Alpes</département>
+            <département numéro="38">Isère</département>
+            <sommet nom="La Barre des Écrins" altitude="4101"/>
+            <sommet nom="La Meije" altitude="3983"/>
+            <sommet nom="L'Ailefroide" altitude="3954"/>
+            <sommet nom="Le Mont Pelvoux" altitude="3943"/>
+            <sommet nom="La Grande Ruine" altitude="3765"/>
+            <sommet nom="Le Rateau" altitude="3809"/>
+            <glacier nom="Le Glacier Blanc" altitude="4000" longueur="5"/>
+            <glacier nom="Le Glacier de la Girose" altitude="3600">skiable l'été</glacier>
+            <glacier nom="Glacier d'Arsine" altitude="2450" surface="2.6" longueur="1.7"/>
+            <lac nom="Lac d'Arsine" altitude="2450" surface="0.39" naturel="oui"/>
+            <lac nom="Lac de l'Eychauda" altitude="2514" surface="0.15" naturel="oui"/>
+            <lac nom="Lac de Combeynot" altitude="2538" surface="0.027" naturel="oui"/>
+            <lac nom="Lac de la Muzelle" altitude="2105" surface="0.09"/>
+            <lac nom="Le Lauvitel" altitude="1510" surface="0.35" naturel="oui"/>
+        </massif>
+        <massif nom="Grandes Rousses">
+            <département numéro="73">Savoie</département>
+            <département numéro="38">Isère</département>
+            <sommet nom="Le Pic Bayle" altitude="3465"/>
+            <sommet nom="Le Pic de l'Étendard" altitude="3464"/>
+            <sommet nom="Le Pic Blanc" altitude="3323"/>
+            <glacier nom="Les Glaciers des Rousses"/>
+        </massif>
+        <massif nom="Taillefer">
+            <département numéro="38">Isère</département>
+            <sommet nom="Le Taillefer" altitude="2857"/>
+            <sommet nom="La Pyramide" altitude="2838"/>
+            <sommet nom="Le Grand Galbert" altitude="2561"/>
+            <glacier nom="Le Grand Glacier" surface="0.017" altitude="2327" longueur="0.5"/>
+            <lac nom="Lac Fourchu" altitude="2048" surface="0.064" naturel="oui"/>
+            <lac nom="Grand lac de Laffrey" altitude="911" surface="1.22" naturel="oui"/>
+        </massif>
+    </massif>
+
+    <massif nom="Le Massif Central">
+        <département numéro="03">Allier</département>
+        <département numéro="12">Aveyron</département>
+        <département numéro="15">Cantal</département>
+        <département numéro="19">Corrèze</département>
+        <département numéro="23">Creuse</département>
+        <département numéro="42">Loire</département>
+        <département numéro="43">Haute-Loire</département>
+        <département numéro="46">Lot</département>
+        <département numéro="48">Lozère</département>
+        <département numéro="63">Puy-de-Dôme</département>
+        <département numéro="87">Haute-Vienne</département>
+        <sommet nom="Puy de Sancy" altitude="1885"/>
+        <sommet nom="Puy de Dôme" altitude="1465"/>
+        <sommet nom="Banne d'Ordanche" altitude="1512"/>
+    </massif>
+
+    <massif nom="Les Pyrénées">
+        <département numéro="09">Ariège</département>
+        <département numéro="31">Haute-Garonne</département>
+        <département numéro="64">Pyrénées-Atlantiques</département>
+        <département numéro="65">Hautes-Pyrénées</département>
+        <département numéro="66">Pyrénées-Orientales</département>
+        <sommet nom="Vignemale" altitude="3298">Point culminant des Pyrénées</sommet>
+        <sommet nom="Le Pic de Montferrat" altitude="3219"/>
+        <sommet nom="Le Pic du Canigou" altitude="2784"/>
+        <sommet nom="Le Pic du Midi de Bigorre" altitude="2876">Observatoire du Pic du Midi</sommet>
+        <glacier nom="Le Glacier de la Cascade" surface="0.02"/>
+    </massif>
+
+    <massif nom="Vosges">
+        <département numéro="54">Meurthe-et-Moselle</département>
+        <département numéro="57">Moselle</département>
+        <département numéro="67">Bas-Rhin</département>
+        <département numéro="68">Haut-Rhin</département>
+        <département numéro="70">Haute-Saône</département>
+        <département numéro="88">Vosges</département>
+        <département numéro="90">Territoire de Belfort</département>
+    </massif>
+
+</massifs>
+

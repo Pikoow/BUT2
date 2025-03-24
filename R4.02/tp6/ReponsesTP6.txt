@@ -1,0 +1,38 @@
+﻿# Fichier massifs2.xml
+
+Question 3.2.a massifs2.xml : Afficher l'altitude de la Meije (sommet tel que nom=« La Meije »)
+//sommet[@nom="La Meije"]/@altitude
+
+Question 3.2.b massifs2.xml : Afficher les noms des glaciers situés dans un massif de Haute-Savoie
+//massif[département[@numéro="74"]]//glacier/@nom
+
+Question 3.2.c massifs2.xml : Afficher les noms des glaciers qui n'ont pas de longueur
+//glacier[not(@longueur)]/@nom
+
+Question 3.2.d massifs2.xml : Afficher les noms des sommets situés dans le massif "Les Pyrénées" et ayant une description (un contenu texte)
+//massif[@nom="Les Pyrénées"]//sommet[text()]/@nom
+
+Question 3.2.e massifs2.xml : Afficher les noms des massifs qui sont dans au moins cinq départements
+//massif[count(département) >= 5]/@nom
+
+Question 3.2.f massifs2.xml : Afficher les noms des lacs situés à plus de 2500m d'altitude dans le massif des Écrins
+//massif[@nom="Massif des Écrins"]//lac[@altitude > 2500]/@nom
+
+Question 3.2.g massifs2.xml : Afficher le nom du plus haut lac du document
+//lac[not(@altitude < //lac/@altitude)]/@nom
+
+Question 3.2.h massifs2.xml : Afficher les noms des massifs qui contiennent au moins un lac et un glacier
+//massif[.//lac and .//glacier]/@nom
+
+Question 3.2.i massifs2.xml : Afficher le nom du sommet qui est juste avant celui appelé "L'Aiguille du Midi"
+//sommet[@nom="L'Aiguille du Midi"]/preceding-sibling::sommet[1]/@nom
+
+Question 3.2.j massifs2.xml : Afficher le nom des massifs qui portent le même nom que l'un de leurs départements
+//massif[département = @nom]/@nom
+
+Question 3.2.k massifs2.xml : Afficher les noms des sommets plus hauts que "La Barre des Écrins" (avec l'accent)
+//sommet[@altitude > //sommet[@nom="La Barre des Écrins"]/@altitude]/@nom
+
+Question 3.2.l massifs2.xml : Afficher les noms des lacs situés dans le département 38
+//massif[département[@numéro="38"]]//lac/@nom
+

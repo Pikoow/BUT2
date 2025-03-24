@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<massifs>
+
+    <massif nom="Jura">
+        <sommet nom="Le Crêt de la Neige" altitude="1720">Point culminant du Jura</sommet>
+        <sommet nom="Le Grand Colombier" altitude="1534"/>
+        <sommet nom="Le Mont du Chat" altitude="1496"/>
+        <sommet nom="Le Mont d'Or" altitude="1463"/>
+    </massif>
+
+    <massif nom="Les Alpes">
+        <massif nom="Massif du Mont-Blanc">
+            <sommet nom="Le Mont Blanc" altitude="4808">Le plus haut sommet des Alpes</sommet>
+            <sommet nom="Le Mont Maudit" altitude="4465"/>
+            <sommet nom="Les Grandes Jorasses" altitude="4208"/>
+            <sommet nom="L'Aiguille Verte" altitude="4122"/>
+            <sommet nom="Le Mont Brouillard" altitude="4068"/>
+            <sommet nom="L'Aiguille du Midi" altitude="3842"/>
+            <glacier nom="Le Glacier d'Argentière" altitude="3400"/>
+            <glacier nom="La Mer de Glace" longueur="7">Le plus grand glacier du massif</glacier>
+        </massif>
+        <massif nom="Massif de la Vanoise">
+            <sommet nom="La Grande Casse" altitude="3855"/>
+            <sommet nom="Le Mont Pourri" altitude="3779"/>
+            <sommet nom="Le Sommet de Bellecôte" altitude="3417"/>
+            <glacier nom="Les Glaciers de la Vanoise"/>
+        </massif>
+        <massif nom="Massif des Écrins">
+            <sommet nom="La Barre des Écrins" altitude="4101"/>
+            <sommet nom="La Meije" altitude="3983"/>
+            <sommet nom="Le Mont Pelvoux" altitude="3943"/>
+            <sommet nom="La Grande Ruine" altitude="3765"/>
+            <glacier nom="Le Glacier Blanc" altitude="4000" longueur="5"/>
+            <glacier nom="Le Glacier de la Girose" altitude="3600">skiable l'été</glacier>
+        </massif>
+        <massif nom="Grandes Rousses">
+            <sommet nom="Le Pic Bayle" altitude="3465"/>
+            <sommet nom="Le Pic de l'Étendard" altitude="3464"/>
+            <sommet nom="Le Pic Blanc" altitude="3323"/>
+            <glacier nom="Les Glaciers des Rousses"/>
+        </massif>
+        <massif nom="Taillefer">
+            <sommet nom="Le Taillefer" altitude="2857"/>
+            <sommet nom="Le Grand Galbert" altitude="2561"/>
+        </massif>
+    </massif>
+
+    <massif nom="Les Pyrénées">
+        <sommet nom="Vignemale" altitude="3298">Point culminant des Pyrénées</sommet>
+        <sommet nom="Le Pic de Montferrat" altitude="3219"/>
+        <sommet nom="Le Pic du Canigou" altitude="2784"/>
+        <sommet nom="Le Pic du Midi de Bigorre" altitude="2876">Observatoire du Pic du Midi</sommet>
+        <glacier nom="Le Glacier de la Cascade" surface="0.02"/>
+    </massif>
+
+
+</massifs>
